@@ -47,6 +47,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             'Modificado desde git %',
+
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
