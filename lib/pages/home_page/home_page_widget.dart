@@ -24,6 +24,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => HomePageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -46,7 +48,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Texto desde github',
+            'Texto 1',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Poppins',
                   color: Colors.white,
